@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title>Email Test</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="controllers/testCtrl.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+
+    <body ng-app="myApp">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>B&D's Email Form</h1>
+            </div>
+        </div>
+        <div class="container-fluid" ng-controller="testCtrl">
+            <div class="row top-margin">
+                <div class="col-md-offset-1 col-md-8">
+                 <form name="myForm" novalidate>
+                    <label for="email">Please Enter your email address:</label>
+                    <input type="email" class="input-md" id="email" name="email" ng-model="model.email"  required >
+                    <button ng-click="submitForm(myForm)" class="btn btn-primary btn-md save-btn">SAVE</button>
+                 </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-3 col-md-2">
+                    <p class="success" ng-show="successful">Your email address has been saved. Select it from the dropdown box below.</p>
+                    <p class="warning" ng-show="warning">Please enter a valid email address!</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-offset-3 col-md-2 select-margin">
+                    <h3>My Email List</h3>
+                    <select class="form-control" placeholder="{{model.email}}">
+                        <option value="" selected disabled>Please select</option>
+                        <option value="{{model.email}}">{{model.email}}</option>
+                    </select>
+                </div>
+             </div>
+        </div>
+    </body>
+</html>

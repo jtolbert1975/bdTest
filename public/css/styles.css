@@ -1,0 +1,49 @@
+.top-margin {
+    margin: 20px auto;
+}
+
+
+.jumbotron > h1{
+    color: #DE6929;
+}
+
+.container {
+    background-color: #000000;
+}
+
+.jumbotron {
+    margin-top: 23px;
+}
+
+input.ng-dirty.ng-valid {
+    background-color: lawngreen;
+}
+
+input.ng-dirty.ng-invalid-email{
+    background-color: red;
+}
+
+.save-btn {
+    padding: 3px 12px;
+    margin-top: -3px;
+    background-color: #DE6929;
+    border: 1px solid #DE6929;
+}
+
+.success{
+    color: #42f45f;
+    margin: 0px 0px 10px 23px;
+}
+
+.warning{
+    color: red;
+    margin: 0px 0px 10px 23px;
+}
+
+.select-margin{
+    margin-left: 26.5%;
+}
+
+label{
+    font-size: 1.1em;
+}
