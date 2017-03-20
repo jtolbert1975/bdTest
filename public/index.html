@@ -12,30 +12,31 @@
     <body ng-app="myApp">
         <div class="container container-width">
             <div class="jumbotron">
-                <h1>J&T's Email Form</h1>
+                <h1>Email Form</h1>
             </div>
         </div>
         <div class="container-fluid container-width" ng-controller="testCtrl">
             <div class="row top-margin">
-                <div class="col-md-offset-1 col-md-8">
+                <div class="col-md-offset-3 col-md-6">
                  <form name="myForm" novalidate>
                     <label for="email">Please Enter your email address:</label>
                     <input type="email" class="input-md" id="email" name="email" ng-model="model.email"  required >
-                    <button ng-click="submitForm(myForm)" class="btn btn-primary btn-md save-btn">SAVE</button>
+                    <button ng-click="submitForm(myForm)" class="btn btn-primary btn-md save-btn">save</button>
                  </form>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-3 col-md-2">
+                <div class="col-md-3">
                     <p class="success" ng-show="successful">Your email address has been saved. Select it from the dropdown box below.</p>
                     <p class="warning" ng-show="warning">Please enter a valid email address!</p>
                 </div>
+            </div>
+            <div class="row">
+
 
             </div>
             <div class="row">
-                <div class="col-md-offset-4 col-md-3">
+                <div class="col-md-offset-6 col-md-3">
                     <h3>My Email List</h3>
-                    <select class="form-control" placeholder="{{model.email}}">
+                    <select class="form-control select-height" placeholder="{{model.email}}">
                         <option value="" selected disabled>Please select</option>
                         <option value="{{model.email}}">{{model.email}}</option>
                     </select>

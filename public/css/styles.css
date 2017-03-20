@@ -5,6 +5,8 @@
 
 .jumbotron > h1{
     color: #DE6929;
+    text-align: center;
+
 }
 
 .container {
@@ -32,12 +34,17 @@ input.ng-dirty.ng-invalid-email{
 
 .success{
     color: #42f45f;
-    margin: 0px 0px 10px 23px;
+    font-size: 12px;
 }
 
 .warning{
     color: red;
-    margin: 0px 0px 10px 23px;
+    font-size: 12px;
+
+}
+
+ p {
+    margin: 0px;
 }
 
 .select-margin{
@@ -50,4 +57,8 @@ label{
 
 .container-width{
     max-width: 1024px;
+}
+
+.select-height{
+    height: 40px;
 }
